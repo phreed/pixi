@@ -1,3 +1,22 @@
+# Jetbrains
+
+Jetbrains produces [several products](https://www.jetbrains.com/ides/) based on the same framework.
+
+## Jetbrains IDEs  (PyCharm, IDEA, CLion, PhpStorm, GoLand, RustRover, ...)
+
+<!-- Keep in sync with https://github.com/pavelzw/pixi-jetbrains/blob/main/README.md -->
+
+Many plugins provided for Jetbrains application products are 
+compatible with the products in the Jetbrains stable.
+The following plugin works with Jetbrains IDE products to provide integrated access to Pixi environments.
+
+### Direnv
+
+In order to use Direnv with [Jetbrains](https://www.jetbrains.com/ides/) products 
+you first have to install the [Direnv plugin](https://plugins.jetbrains.com/plugin/15285-direnv-integration).
+Then follow the instructions in our [Direnv doc page](../third_party/direnv.md).
+Now your Jetbrains IDE will be run within the selected Pixi environment.
+
 
 ## Pycharm
 
@@ -130,9 +149,3 @@ lint = { features = ["lint"], no-default-feature = true }
 
 Now you as a user can run `pixi shell`, which will start the default environment.
 In production, you then just run `pixi run -e prod COMMAND`, and the minimal prod environment is installed.
-
-## Direnv
-
-In order to use Direnv with [Jetbrains](https://www.jetbrains.com/ides/) products you first have to install the [Direnv plugin](https://plugins.jetbrains.com/plugin/15285-direnv-integration).
-Then follow the instructions in our [Direnv doc page](../third_party/direnv.md).
-Now your Jetbrains IDE will be run within the selected Pixi environment.
